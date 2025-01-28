@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOHAMED AYMANE EL ACHIRI - Développeur Full-Stack</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.158.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.158.0/examples/jsm/"
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="loading-screen">
+        <div class="loader"></div>
+        <div class="loading-text">Bienvenue dans mon univers</div>
+    </div>
+
+    <nav class="nav-bar">
+        <div class="logo">MA</div>
+        <div class="nav-links">
+            <a href="#about">À propos</a>
+            <a href="#skills">Compétences</a>
+            <a href="#projects">Projets</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <canvas id="bg"></canvas>
+    
+    <main>
+        <header>
+            <div class="header-content">
+                <div class="glitch-container">
+                    <h1 class="glitch" data-text="MOHAMED AYMANE">MOHAMED AYMANE</h1>
+                    <h2 class="glitch surname" data-text="EL ACHIRI">EL ACHIRI</h2>
+                </div>
+                <p class="typed-text"></p>
+
+            </div>
+        </header>
+
+        <section id="about" class="reveal">
+            <h2>À Propos</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>Je suis un développeur web passionné par l'innovation technologique et la création de solutions numériques performantes. Ma formation en Technicien Spécialisé en Développement Informatique à Groupe Iki et mes études chez Solicode Development m'ont permis d'acquérir une expertise solide dans le développement web.</p>
+                    <div class="languages">
+                        <h3>Langues</h3>
+                        <div>
+                            <span>Arabe</span>
+                            <span>Français</span>
+                            <span>Anglais</span>
+                            <span>Espagnol</span>
+                        </div>
+                    </div>
+                    <a href="#contact" class="cta-button">Travaillons ensemble</a>
+                </div>
+                <div class="experience-cards">
+                    <div class="exp-card">
+                        <span class="number">2+</span>
+                        <span class="label">Années d'Expérience</span>
+                    </div>
+                    <div class="exp-card">
+                        <span class="number">15+</span>
+                        <span class="label">Projets Réalisés</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="reveal">
+            <h2>Compétences</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-progress="90">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML</span>
+                        </div>
+                        <div class="skill-item" data-progress="80">
+                            <i class="fab fa-css3"></i>
+                            <span>CSS</span>
+                        </div>
+                        <div class="skill-item" data-progress="85">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item" data-progress="80">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-progress="85">
+                            <i class="fab fa-php"></i>
+                            <span>PHP</span>
+                        </div>
+                        <div class="skill-item" data-progress="80">
+                            <i class="fas fa-database"></i>
+                            <span>SQL</span>
+                        </div>
+                        <div class="skill-item" data-progress="75">
+                            <i class="fab fa-java"></i>
+                            <span>Java</span>
+                        </div>
+                        <div class="skill-item" data-progress="75">
+                            <i class="fab fa-c"></i>
+                            <span> language C</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="reveal">
+            <h2>Projets Réalisés</h2>
+            <div class="project-grid">
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/logo-ofppt.jpg" alt="Gestion Mobilier">
+                    </div>
+                    <div class="project-content">
+                        <h3>Gestion Mobilier</h3>
+                        <p>Plateforme de gestion de mobilier développée pour gestionmobiliterguigue.ma</p>
+                        <div class="project-tech">
+                            <span>html</span>
+                            <span>css</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://gestionmobiliterguigue.ma" class="btn" target="_blank"><i class="fas fa-external-link-alt"></i> Voir le site</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/marjane-logo.png" alt="Plateforme de Live Streaming">
+                    </div>
+                    <div class="project-content">
+                        <h3>Site web Marjane</h3>
+                        <p>Une simoulation de site web marjane</p>
+                        <div class="project-tech">
+                            <span>html</span>
+                            <span>Css</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn"><i class="fas fa-external-link-alt"></i> Démo</a>
+                            <a href="#" class="btn"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/groupeiki.png" alt="Gestion des Stagiaires">
+                    </div>
+                    <div class="project-content">
+                        <h3>Gestion des Stagiaires - Groupe Iki</h3>
+                        <p>Plateforme de gestion et suivi des formations des stagiaires</p>
+                        <div class="project-tech">
+                            <span>PHP</span>
+                            <span>SQL</span>
+                            <span>JavaScript</span>
+                            <span>html</span>
+                            <span>css</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn"><i class="fas fa-external-link-alt"></i> En cours</a>
+                        </div>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            <a href="https://github.com/le3shiri" class="github-projects-btn">
+                <i class="fas fa-code-branch"></i>
+                <span>Découvrir plus de projets sur GitHub</span>
+            </a>
+        </section>
+
+        <section id="contact" class="reveal active">
+            <h2>Contact</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Créons quelque chose d'extraordinaire ensemble</h3>
+                    <p>Je suis toujours ouvert aux nouvelles opportunités et aux projets innovants.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:satayman41@gmail.com">satayman41@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-location-dot"></i>
+                            <span>Maroc</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/le3shiri" class="social-btn"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-btn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-btn"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script type="module" src="background.js"></script>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
